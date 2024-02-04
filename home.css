@@ -1,0 +1,77 @@
+.h{
+    margin: 7px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightskyblue;
+    font-family: 'Honk', system-ui;  
+}
+
+.g{
+    margin: 7px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightskyblue;
+    font-family: 'Honk', system-ui;  
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 9px;
+    margin: 9px;
+    background-color: blue;
+    color: black;
+    font-family: 'Honk', system-ui;
+}
+
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: #333; /* Link color */
+}
+
+.nav ul li a:hover {
+    color: #007bff; /* Link color on hover */
+}
+
+
+/* Default styles for your website */
+
+/* Media query for devices with a maximum width of 767px (typical smartphones) */
+@media only screen and (max-width: 767px) {
+    /* Adjust styles for smaller screens here */
+    /* For example: */
+    body {
+        font-size: 14px; /* Adjust font size for better readability on smaller screens */
+    }
+    .container {
+        width: 90%; /* Adjust container width to fit smaller screens */
+        margin: 0 auto; /* Center the container horizontally */
+    }
+    /* You may need to adjust other elements such as navigation menus, images, etc. */
+}
+
+/* Media query for devices with a maximum width of 991px (small tablets) */
+@media only screen and (max-width: 991px) {
+    /* Adjust styles for tablets here if necessary */
+}
+
+/* Media query for devices with a maximum width of 1199px (larger tablets and small desktops) */
+@media only screen and (max-width: 1199px) {
+    /* Adjust styles for larger tablets and small desktops here if necessary */
+}

@@ -1,0 +1,128 @@
+body {
+  font-family: 'Honk', system-ui;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+.itsyou {
+  margin: 20px;
+  text-align: center;
+}
+
+.itsyou img {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+}
+
+/* Navigation Styles */
+
+.h {
+  margin: 7px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: lightskyblue;
+  font-family: 'Honk', system-ui;  
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  background-color: blue;
+  color: black;
+  font-family: 'Honk', system-ui;
+}
+
+.nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav ul li a:hover {
+  color: #007bff;
+}
+
+/* Dropdown Menu */
+
+.dropdown .submenu {
+  display: none;
+  position: absolute;
+  background-color: skyblue;
+  width: auto;
+  z-index: 1;
+}
+
+.dropdown:hover .submenu {
+  display: block;
+  animation-delay: 100ms;
+}
+
+.dropdown .submenu li {
+  display: block;
+}
+
+.dropdown .submenu li a {
+  color: #333;
+  padding: 10px;
+  display: block;
+  text-decoration: none;
+}
+
+.dropdown .submenu li a:hover {
+  background-color: lightblue;
+}
+
+/* Your existing styles */
+
+.arrow {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border: solid 5px transparent;
+  border-top-color: #fff;
+  position: relative;
+  top: 2px;
+  transition: transform 7s;
+}
+
+.open .arrow {
+  transform: rotate(180deg);
+}
+
+/* Your existing styles */
+
+
+/* Media Queries */
+
+@media only screen and (max-width: 767px) {
+  .container {
+      padding: 10px;
+  }
+  .itsyou {
+      margin: 10px;
+  }
+  .itsyou img {
+      width: 120px;
+      height: 120px;
+  }
+}

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Honk&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color: blue;
+        }
+        
+        li {
+          float: left;
+        }
+        
+        li a, .dropbtn {
+          display: inline-block;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        }
+        
+        li a:hover, .dropdown:hover .dropbtn {
+          background-color: red;
+        }
+        
+        li.dropdown {
+          display: inline-block;
+        }
+        
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #f9f9f9;
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1;
+        }
+        
+        .dropdown-content a {
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+          text-align: left;
+        }
+        
+        .dropdown-content a:hover {background-color: #f1f1f1;}
+        
+        .dropdown:hover .dropdown-content {
+          display: block;
+        }
+        .fa {
+  font-size: 30px;
+  cursor: pointer;
+  user-select: none;
+  color: orange;
+}
+
+.fa:hover {
+  color: blue;
+}
+        </style>
+</head>
+<body>
+    <h2 class="h">Nigga Social Media Web</h2>
+    <header>
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="helpline.html">Contact</a></li>
+                <li><a href="contact.html">Helpline</a></li>
+                <li><a href="emergency.html">Emergency</a></li>
+                <li><a href="loginpage.html">Log-in</a></li>
+                <li class="dropdown" id="dropdown">
+                    <a href="#" id="dropdown-toggle">Categories<span class="arrow"></span></a>
+                    <ul class="submenu" id="submenu">
+                        <li><a href="african.html">African Nigga</a></li>
+                        <li><a href="moroco.html">Moroccan Nigga</a></li>
+                        <li><a href="australia.html">Australian Nigga</a></li>
+                        <li><a href="France Nigg.html">France Nigga</a></li>
+                        <li><a href="Croatian Nigga.html">Croatian Nigga</a></li>
+                        <li><a href="Vietnamese Nigga.html">Vietnamese Nigga</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <div class="itsyou">
+          <i onclick="myFunction(this)" class="fa fa-thumbs-up"></i>
+            <img src="Screenshot (2).png" alt="image load error">
+            <div class="dd">
+                <h2 class="hh">AbdulRehman Nizamani</h2>
+                <p class="bio">Lives in Moscow</p>
+                <p class="bio">Joined in 2016</p>
+            </div>
+        </div>
+
+        <div class="itsyou">
+          <i onclick="myFunction(this)" class="fa fa-thumbs-up"></i>
+            <img src="download.jpg" alt="image load error">
+            <div class="dd">
+                <h2 class="hh">Kariro</h2>
+                <p class="bio">Lives in Central Africa</p>
+                <p class="bio">Joined in 2013</p>
+            </div>
+        </div>
+        <div class="itsyou">
+          <i onclick="myFunction(this)" class="fa fa-thumbs-up"></i>
+            <img src="images.jpg" alt="image load error">
+            <div class="dd">
+                <h2 class="hh">Shairo</h2>
+                <p class="bio">Lives in Colombo Africa</p>
+                <p class="bio">Joined in 2019</p>
+            </div>
+        </div>
+        <div class="itsyou">
+          <i onclick="myFunction(this)" class="fa fa-thumbs-up"></i>
+            <img src="images (1).jpg" alt="image load error">
+            <div class="dd">
+                <h2 class="hh">Laariyo</h2>
+                <p class="bio">Lives in North Africa region Kuru</p>
+                <p class="bio">Joined in 2016</p>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+    
+
+<script>
+function myFunction(x) {
+  x.classList.toggle("fa-thumbs-down");
+}
+</script>
+</body>
+</html>
